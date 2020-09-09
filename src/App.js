@@ -9,7 +9,7 @@ function App() {
       new Promise((resolve) => {
         setTimeout(() => {
           resolve(setString("Turbo Team"));
-        }, 250);
+        }, 500);
       });
     })();
   }, []);
