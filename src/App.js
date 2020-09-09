@@ -5,13 +5,11 @@ function App() {
   const [string, setString] = useState("King of slams");
 
   useEffect(() => {
-    (async () => {
-      new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(setString("Turbo Team"));
-        }, 500);
-      });
-    })();
+    new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(setString("Turbo Team"));
+      }, 500);
+    });
   }, []);
 
   return <p>{string}</p>;
